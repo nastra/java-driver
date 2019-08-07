@@ -4,6 +4,7 @@
 
 ### 4.3.0 (in progress)
 
+- [documentation] JAVA-2384: Add quick overview section to each manual page
 
 ### 4.2.0
 
