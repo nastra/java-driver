@@ -4,6 +4,7 @@
 
 ### 4.3.0 (in progress)
 
+- [documentation] JAVA-2416: Update paging section in the manual
 
 ### 4.2.0
 
