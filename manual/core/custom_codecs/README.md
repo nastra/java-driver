@@ -87,6 +87,18 @@ CqlSession session = CqlSession.builder()
     .build();
 ```
 
+You may also add codecs to an existing session at runtime:
+
+```java
+// The cast is required for backward compatibility reasons (registry mutability was introduced in
+// 4.3.0). It is safe as long as you didn't hack the driver internals to plug a custom registry
+// implementation.
+MutableCodecRegistry registry =
+    (MutableCodecRegistry) session.getContext().getCodecRegistry();
+
+registry.register(new CqlIntToStringCodec());
+```
+
 You can now use the new mapping in your code:
 
 ```java

@@ -4,6 +4,7 @@
 
 ### 4.3.0 (in progress)
 
+- [improvement] JAVA-2419: Allow registration of user codecs at runtime
 
 ### 4.2.0
 
